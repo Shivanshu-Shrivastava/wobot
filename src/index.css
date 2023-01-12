@@ -1,0 +1,101 @@
+:root{
+  --blue-color:#3766E8;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.rect{
+  position: absolute;
+  width: 100%;
+  background-color: #00000024;
+  /* border: 10px solid; */
+  transform: rotate(-35deg);
+  height: 50%;
+  /* transform: translate3d(-8px, 29px, 21px); */
+  /* overflow: hidden; */
+  border-top: 14px solid rgba(55, 102, 232, 0.2);
+  border-bottom: 14px solid rgba(55, 102, 232, 0.2);
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.shadow-ti{
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+}
+.solid-1{
+  
+  background: #3766E8;
+  width: 40px;
+  transform: matrix(0.86, -0.52, 0.51, 0.86, 0, 0);
+  border: 5px solid #3766E8;
+  border-radius: 3px;
+}
+.solid-2{
+  background: #3766E8;
+  width: 40px;
+  transform: matrix(0.86, -0.52, 0.51, 0.86, 0, 0);
+  border: 5px solid #3766E8;
+  border-radius: 3px;
+}
+
+
+.card{
+  width: 25rem;
+}
+.form-control:focus,.form-select:focus{
+   box-shadow: unset;
+   border: 3px solid #86b7fe;
+}
+.butn{
+    font-weight: 700;
+    line-height: 1.45;
+    color: #7b809a;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.625rem 1.5rem;
+    font-size: .75rem;
+    border-radius: 0.5rem;
+    transition: all .15s ease-in;
+}
+.butn-blue{
+  color: #fff;
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+.butn-blue:hover{
+  
+  box-shadow: 0 14px 26px -12px rgba(55, 102, 232, 0.4), 0 4px 23px 0 rgb(55 102 232 / 15%), 0 8px 10px -5px rgb(55 102 232 / 20%);;
+}
+.butn-secondary{
+  background-color: #0000ff30;
+}
+.butn-secondary:focus-within{
+  background-color: var(--blue-color);
+  color: #fff;
+}
+@media (max-width:500px) {
+  .rect{
+    display: none;
+  }
+  
+}
